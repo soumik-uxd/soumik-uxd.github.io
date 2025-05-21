@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Soumik Das</title>
+    <!-- Pico.css for lightweight styling -->
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.5.10/css/pico.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <main class="container">
+        <header>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <img src="img/profile.jpg" alt="Profile picture of Soumik Das" width="120" height="120" style="border-radius: 50%; object-fit: cover; border: 2px solid #ccc;">
+                <h1 style="margin: 0;">Soumik Das</h1>
+            </div>
+            <!-- Navigation Tabs -->
+            <nav>
+                <ul role="tablist">
+                    <li>
+                        <a href="#about" role="tab" aria-selected="true" id="tab-about" onclick="showTab('about')" class="tab-link">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#articles" role="tab" aria-selected="false" id="tab-articles" onclick="showTab('articles')" class="tab-link">Articles</a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://youtube.com/" target="_blank" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Tab Content -->
+        <section id="about" class="tab-content" style="display: block;">
+            <h2>About Me</h2>
+            <p>
+                Hey there! I'm Soumik — a tech enthusiast, problem-solver, and lifelong learner based in Bavaria, Germany. With nearly two decades in the IT world, I’ve worn many hats: engineer, architect, coach, and consultant. I currently work as a Principal Consultant at Metafinanz, where I help design and build next-gen data and ML solutions for large-scale enterprise systems, mostly in the insurance space.
+            </p>
+            <p>
+                I’m passionate about using big data, real-time architectures, and machine learning to drive meaningful outcomes — and I love mentoring teams along the way. Whether it's building serverless data meshes, conversational AI tools, or even blockchain-based healthcare platforms, I get excited by challenging, impactful work.
+            </p>
+            <p>
+                When I’m not neck-deep in code or architectural diagrams, you’ll probably find me geeking out over new tech trends, sharing knowledge with my peers, or brushing up on one of the four languages I speak.
+            </p>
+            <p>
+                Let’s connect if you're into data, tech, or just want to talk shop!
+            </p>
+        </section>
+
+        <section id="articles" class="tab-content" style="display: none;">
+            <h2>Articles</h2>
+            <ul>
+                <li><a href="./articles/article1.html">Why Data Platform Engineering Matters</a></li>
+                <li><a href="./articles/article2.html">The Importance of Test Driven Development in the Gen AI Era</a></li>
+                <li><a href="./articles/article3.html">Why Good Engineering Principles Matter More Than Agile Development</a></li>
+            </ul>
+        </section>
+    </main>
+    <script src="js/tabs.js"></script>
+</body>
+
+</html>
